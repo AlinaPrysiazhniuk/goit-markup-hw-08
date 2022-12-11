@@ -21,19 +21,6 @@
 }
 
 
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  // @media screen and (min-width: 780px) {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-}
 
 .team__item:not(:last-child) {
   margin-right: 30px;
@@ -64,7 +51,7 @@
 .team__name {
   margin-bottom: 10px;
   font-weight: 500;
-  color: var(--first-color);
+  color: red;
 }
 
 .team__position {

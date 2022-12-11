@@ -173,6 +173,19 @@
     }
   }
   
+.page__header--mob {
+  display: flex;
+  gap: 50px;
+  margin-left: 93px;
+  & .page__link--current {
+    color: var(--accent-color);
+    &:after {
+      @media screen and (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+
   .page__link--current {
     position: relative;
     &:after {
@@ -248,6 +261,8 @@
       background-color: var(--main-background-color);
       padding-top: 10px;
       padding-bottom: 48px;
+      padding-right: 15px;
+      padding-left: 40px;
     }
   }
   
@@ -302,4 +317,3 @@
       }
     }
   }
-  
