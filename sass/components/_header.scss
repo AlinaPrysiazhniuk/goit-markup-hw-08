@@ -24,6 +24,15 @@
 }
 
 .page__link {
+  @media screen and (max-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.page__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -34,8 +43,19 @@
   }
 }
 
+.contacts__link {
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+}
+
 .contacts__item:not(:last-child) {
   margin-bottom: 32px;
+  @media screen and (max-width: 768px) {
+   margin-bottom: 0;
+  }
 }
 
 .contacts__link {
@@ -46,6 +66,10 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (max-width: 768px) {
+  gap: 8px;
+  }
+
 }
 
 .page__header {
@@ -60,15 +84,9 @@
       }
     }
   }
-
-  // @media screen and (max-width: 480px) {
-  //   margin-left: 0;
-  //   flex-direction: column;
-  //   gap: 0;
-  // }
-  // @media screen and (max-width: 768px) {
-  //   margin-left: 88px;
-  // }
+  @media screen and (max-width: 768px) {
+    margin-left: 87px;
+  }
 }
 
 .menu-list .page__link--current {
@@ -83,29 +101,14 @@
   margin-right: 0;
 }
 
-.header__contacts {
-  display: flex;
-  margin-left: auto;
-  height: 16px;
-
-  .header__container & {
-    @media screen and (max-width: 480px) {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
 .header__contacts .contacts__item + .contacts__item {
   margin-left: 30px;
   @media screen and (max-width: 480px) {
     margin-left: 0;
   }
- 
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+  }
 }
 
 .contacts__icon {
@@ -119,17 +122,44 @@
   @media screen and (max-width: 480px) {
     display: none;
   }
+
+  
+  @media screen and (max-width: 768px) {
+  margin-right: 0px;
+  }
+}
+
+.contacts__icon--mail {
+  @media screen and (max-width: 768px) {
+    width: 14px;
+    height: 10px;
+    }
+}
+
+.contacts__icon--phone {
+  @media screen and (max-width: 768px) {
+    width: 10px;
+    height: 12px;
+    }
 }
 
 .navigation {
   display: flex;
+  align-items: center;
 }
+
 
 .header__container {
   display: flex;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: 768px) {
+  padding-left: 15px;
+  padding-right: 15px;
+  }
 }
+
 
 .page--menu {
   @media screen and (max-width: 480px) {
@@ -167,4 +197,12 @@
 }
 
 
+.contacts.tablet__contacts {
+@media screen and (max-width: 768px) {
+  flex-wrap: wrap;
+  gap: 10px;
+  height: auto;
+  margin-left: 96px;
+}
+}
 

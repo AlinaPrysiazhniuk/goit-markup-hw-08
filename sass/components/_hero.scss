@@ -48,11 +48,11 @@
 .hero-container {
   padding-top: 118px;
   padding-bottom: 118px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 480px) {
     padding-top: 118px;
     padding-bottom: 118px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -61,24 +61,28 @@
 .hero-tittle {
   font-size: 26px;
   line-height: 1.62;
-  width: 360px;
+  // width: 360px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
   text-transform: uppercase;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 26px;
     line-height: 1.62;
-    width: 360px;
+    letter-spacing: 0.06em;
+    // width: 696px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;
   }
+
+
+ 
 }
 
 .hero-tittle,
@@ -105,11 +109,13 @@
   padding-left: 24px;
   padding-right: 24px;
   cursor: pointer;
+  box-shadow: var(--form-button-shadow);
+  border: none;
 
-  @media screen and (min-width: 480px) {
-    padding-left: 24px;
-    padding-right: 24px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
   }
+
 }

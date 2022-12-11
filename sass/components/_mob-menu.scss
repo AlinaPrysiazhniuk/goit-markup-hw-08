@@ -27,6 +27,7 @@
       font-size: 34px;
       line-height: 1.18;
       letter-spacing: 0.02em;
+      color: var(--accent-color);
       transition: color var(--animation);
   }
   
@@ -35,6 +36,7 @@
       font-size: 24px;
       line-height: 1.17;
       letter-spacing: 0.02em;
+      color: var(--text-color);
       transition: color var(--animation);
   }
   
@@ -72,8 +74,8 @@
   //   }
   // }
   
-  .contacts--mob.contacts__item:not(:last-child) {
-    margin-bottom: 0px;
+ .contacts__item--mob:not(:last-child) {
+    margin-bottom: 32px;
   }
   
   .contacts--mob {
@@ -83,11 +85,6 @@
   .contacts__link--mob {
     display: flex;
     align-items: center;
-    color: var(--text-color);
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
   }
   
   .page__header {
@@ -135,11 +132,6 @@
         display: none;
       }
     }
-  
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      gap: 10px;
-    }
   }
   
   .header__contacts .contacts__item + .contacts__item {
@@ -147,8 +139,12 @@
     @media screen and (max-width: 480px) {
       margin-left: 0;
     }
-   
+    @media screen and (max-width: 768px) {
+    margin-left: 0;
   }
+  }
+   
+  
   
   .contacts__icon--mob {
     fill: var(--icon-contacts-color);
@@ -173,18 +169,26 @@
     }
   }
   
+// .page__header--mob {
+//   display: flex;
+//   gap: 50px;
+//   margin-left: 93px;
+//   & .page__link--current {
+//     color: var(--accent-color);
+//     &:after 
+//       
+//     }
+// }
+// }
+
 .page__header--mob {
   display: flex;
-  gap: 50px;
-  margin-left: 93px;
+  flex-direction: column;
+  align-items: flex-start;
   & .page__link--current {
     color: var(--accent-color);
-    &:after {
-      @media screen and (max-width: 480px) {
-        display: none;
-      }
-    }
-  }
+}
+}
 
   .page__link--current {
     position: relative;
@@ -251,6 +255,14 @@
     }
   }
   
+  .mob--close {
+    transition: fill var(--animation);
+    & :hover {
+      fill: var(--accent-color);
+    }
+  }
+
+
   .mob-menu {
     @media screen and (max-width: 480px) {
       position: fixed;
