@@ -1,0 +1,136 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--hero-footer-background-color);
+}
+
+.contacts__map,
+.contacts__link--footer {
+  text-decoration: none;
+}
+
+.footer__container {
+  align-items: baseline;
+  display: flex;
+  gap: 93px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+  }
+}
+
+.information {
+  @media screen and (max-width: 480px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+.address--footer {
+  margin-top: 20px;
+
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
+}
+
+.contacts__item--footer {
+  list-style-type: none;
+}
+.contacts__item--bottom {
+  margin-bottom: 9px;
+}
+
+.contacts__map,
+.contacts__link--footer {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contacts__map {
+  font-style: normal;
+  color: var(--accent-color-text);
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.contacts__link--footer {
+  font-style: normal;
+  color: var(--contacts-link-color);
+  transition: color var(--animation);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.welcome {
+  @media screen and (max-width: 480px) {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+}
+
+.welcome__join {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent-color-text);
+  @media screen and (max-width: 480px) {
+    display: block;
+  } 
+}
+
+
+
+.soc__footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.soc__item {
+  width: 44px;
+  height: 44px;
+}
+
+.soc__link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--icon-footer-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--animation);
+  &:hover,
+  &:focus {
+    background-color: var(--icon-backgroud-color-hover);
+  }
+}
+
+.soc__icon {
+  fill: var(--accent-color-text);
+  transition: fill var(--animation);
+
+  .soc__link:hover &,
+  .soc__link:focus & {
+    fill: var(--icon-soc-color-hover);
+  }
+}
+
+
