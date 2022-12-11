@@ -10,18 +10,18 @@
 }
 
 .footer__container {
-  align-items: baseline;
-  display: flex;
-  gap: 93px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
 
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (max-width: 480px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-  }
+  // @media screen and (max-width: 1120px) {
+  //   align-items: baseline;
+  // display: flex;
+  // gap: 93px;
+  // }
 }
 
 .information {

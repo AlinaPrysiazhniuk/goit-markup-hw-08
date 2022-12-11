@@ -336,41 +336,27 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-container {
     padding-top: 118px;
     padding-bottom: 118px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
 .hero-tittle {
   font-size: 26px;
   line-height: 1.62;
-  width: 360px;
   margin-bottom: 30px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 900;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-tittle {
     font-size: 26px;
     line-height: 1.62;
-    width: 360px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-tittle {
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -398,13 +384,14 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   cursor: pointer;
+  box-shadow: var(--form-button-shadow);
+  border: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .hero-button {
-    padding-left: 24px;
-    padding-right: 24px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border: none;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
   }
 }
 
@@ -424,6 +411,8 @@ body {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 768px;
+    padding-left: 204px;
+    padding-right: 204px;
     outline: 1px solid red;
   }
 }
@@ -1053,20 +1042,20 @@ body {
   margin-right: auto;
 }
 
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .features__meta {
   padding-top: 25px;
   padding-right: 190px;
   padding-bottom: 25px;
-  padding-left: 190px;
+  padding-right: 190px;
   margin-bottom: 30px;
   background-color: var(--icon-features-background);
   border-radius: 4px;
+}
+@media screen and (max-width: 770px) {
+  .features__meta {
+    padding-right: 142px;
+    padding-left: 142px;
+  }
 }
 
 .features__tittle {
@@ -1080,6 +1069,11 @@ body {
   text-align: center;
   color: var(--first-color);
   margin-bottom: 10px;
+}
+@media screen and (max-width: 768px) {
+  .features__subtitle {
+    text-align: left;
+  }
 }
 
 .features__text {
