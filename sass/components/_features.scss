@@ -5,26 +5,22 @@
 
 .features__list {
   display: flex;
-  display: flex;
+ flex-wrap: wrap;
   gap: 30px;
-
 }
 
 .features__meta {
   height: 120px;
   padding-top: 25px;
-  padding-right: 100px;
+  padding-right: 190px;
   padding-bottom: 25px;
-  padding-left: 100px;
+  padding-left: 190px;
   margin-bottom: 30px;
   background-color: var(--icon-features-background);
   border-radius: 4px;
 
-  @media screen and (max-width: 480px) {
-  padding-right: 190px;
-  padding-left: 190px;
-}
-
+// padding-right: 100px;
+// padding-left: 100px;
 }
 
 .features__tittle {
@@ -35,11 +31,9 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: var(--first-color);
   margin-bottom: 10px;
-  @media screen and (max-width: 480px) {
-    text-align: center;
-}
 }
 
 .features__text {
