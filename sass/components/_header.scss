@@ -92,7 +92,8 @@
 .contacts.navigation__contacts {
   @media screen and (max-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    align-items: flex-start;
     gap: 10px;
     margin-left: 96px;
   }
