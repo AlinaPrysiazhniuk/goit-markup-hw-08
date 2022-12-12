@@ -20,7 +20,7 @@
   </head>
 
   <body>
-     <!-- <header class="header header--section">
+     <header class="header header--section">
       <div class="container header__container">
         <nav class="navigation">
           <a lang="en" href="./index.html" class="logo logo--begin"
@@ -133,10 +133,10 @@
           </div>
         </div> 
       </div>
-    </header> -->
+    </header>
 
      <main>
-     <!-- <section class="hero overlay">
+     <section class="hero overlay">
          <div class="container hero-container">
            <h1 class="hero-tittle">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-button" data-modal-open>
@@ -231,9 +231,9 @@
             </div>
           </div>
         </div> 
-      </section> -->
+      </section>
 
-     <!-- <section class="features section">
+     <section class="features section">
         <div class="container features__container">
           <h2 class="features__tittle visually__hidden">Особливості</h2>
 
@@ -287,65 +287,70 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-    <!-- <section class="work section">
+    <section class="work section">
         <div class="container work__container">
           <h2 class="work__tittle">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img
-                src="./images/box1.jpg"
-                alt="На столі стоїть монітор, клавіатура. Зліва від 
-                    клавіатури лежить аркуш із алгоритмом коду, який в цей час набирає чоловік"
-                width="370"
-                height="294"
+              <picture>
+                <source
+                srcset="./images/box1.jpg 1x, ./images/box1-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
+              </picture>
               <div class="work__name">
                 <p class="work__action">Десктопні додатки</p>
               </div>
             </li>
 
             <li class="work__item">
-              <img
-                src="./images/box2.jpg"
-                alt="На підставці стоїть ноуткбук, на екрані якого показано приклад із трьох варіантів зовнішнього вигляду застосунку. Біля ноутбуку знаходиться людина із телефоном, яка одразу тестує ці варіанти на телефоні"
-                width="370"
-                height="294"
+              <picture>
+                <source
+                srcset="./images/box2.jpg 1x, ./images/box2-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
-
+              </picture>
               <div class="work__name">
                 <p class="work__action">Мобільні додатки</p>
               </div>
             </li>
             <li class="work__item">
-              <img
-                src="./images/box3.jpg"
-                alt="Людина тримає у лівій руці графічний планшет, на екрані якого виведено кольорову палітру. У правій руці вона тримає стилус, і певно хоче вибрати якийсь колір для певного графічного елеметну"
-                width="370"
-                height="294"
+              <picture>
+                <source
+                srcset="./images/box3.jpg 1x, ./images/box3-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
-
+              </picture>
               <div class="work__name">
                 <p class="work__action">Дизайнерські рішення</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-        <!-- <section class="team section">
+        <section class="team section">
         <div class="container team__container">
           <h2 class="team__title">Наша команда</h2>
 
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./images/teamcard1.jpg"
-                alt="Молодий чоловік в окулярах, з темною бородою,що мило посміхається. Він одягнутий у коричневу сорочку з білими гудзиками"
-                width="270"
-                height="260"-- 
+              <picture>
+                <source
+                srcset="./images/teamcard1.jpg 1x, ./images/teamcard1-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
+              <source
+              srcset="./images/teamcard1-tablet.jpg 1x, ./images/teamcard1-tablet-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/teamcard1-mob.jpg 1x, ./images/teamcard1-mob-2x.jpg 2x"
+              media="(min-width: 480px)"
+            />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -383,12 +388,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teamcard2.jpg"
-                alt="Молода дівчина, зі світлим волоссям середньої довжини. Вона в окулярах, з прямокутною оправою. Має гарну приємну посмішку. Одягнута у чорний піджак та білу блузу"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                srcset="./images/teamcard2.jpg 1x, ./images/teamcard2-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
+              <source
+              srcset="./images/teamcard2-tablet.jpg 1x, ./images/teamcard2-tablet-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/teamcard2-mob.jpg 1x, ./images/teamcard2-mob-2x.jpg 2x"
+              media="(min-width: 480px)"
+            />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Fronteand Developer</p>
@@ -425,12 +438,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teamcard3.jpg"
-                alt="Молодий чоловік, з русявим волоссям та легкою світлою щетиною. Він дивиться у ліву сторону та приємно посміхається.На ньому одягнута світло-блакитна сорочка"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                srcset="./images/teamcard3.jpg 1x, ./images/teamcard3-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
+              <source
+              srcset="./images/teamcard3-tablet.jpg 1x, ./images/teamcard3-tablet-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/teamcard3-mob.jpg 1x, ./images/teamcard3-mob-2x.jpg 2x"
+              media="(min-width: 480px)"
+            />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -468,12 +489,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/teamcard4.jpg"
-                alt="Молодий харизматичний чоловік із темним волоссям та темною бородою. Він носить окуляри. Одягнутий у чорну футболку, на правій руці має татуювання"
-                width="270"
-                height="260"
+              <picture>
+                <source
+                srcset="./images/teamcard4.jpg 1x, ./images/teamcard4-2x.jpg 2x"
+                media="(min-width: 1200px)"
               />
+              <source
+              srcset="./images/teamcard4-tablet.jpg 1x, ./images/teamcard4-tablet-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./images/teamcard4-mob.jpg 1x, ./images/teamcard4-mob-2x.jpg 2x"
+              media="(min-width: 480px)"
+            />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -512,7 +541,7 @@
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
 
        <section class="clients section">
         <div class="container">
@@ -565,7 +594,7 @@
         </div>
       </section> 
 
-       <!-- <footer class="footer">
+       <footer class="footer">
         <div class="container footer__container">
           <div class="information">
             <a
@@ -627,7 +656,7 @@
                   <svg class="soc__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg>
-                </a>
+                </a>   
               </li>
               <li class="soc__item">
                 <a class="soc__link" href="#">
@@ -660,7 +689,7 @@
             </form>
           </div>
         </div>
-      </footer>  -->
+      </footer>  
     </main> 
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
