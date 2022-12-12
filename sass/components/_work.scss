@@ -4,17 +4,17 @@
 }
 
 .work {
-  @media screen and (max-width: 1200px) {
- padding-top: 0;
- }
-  @media screen and (max-width: 768px) {
-   display: none;
-}
-
-  @media screen and (max-width: 480px) {
-  display: none;
-}
-}
+    @media screen and (max-width: 1200px) {
+    padding-top: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+    @media screen and (max-width: 480px) {
+    display: none;
+    }
+    }
 
 .work__list {
   display: flex;
