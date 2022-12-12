@@ -1,12 +1,21 @@
 .send {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
   @media screen and (max-width: 480px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }  
-}
+  }
+
 
 .form {
+  @media screen and (max-width: 768px) {
+  width: 100%;
+    } 
   @media screen and (max-width: 480px) {
     width: 100%;
     }  
@@ -29,10 +38,18 @@
   gap: 12px;
   margin-top: 20px;
 
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+  } 
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
     gap: 20px;
   }  
+  
+
+  
 }
 
 .form__icon {
@@ -78,7 +95,6 @@
 }
 
 .form__email {
-  width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -93,8 +109,15 @@
   &:focus {
     border-color: var(--accent-color);
   }
-    @media screen and (max-width: 480px) {
-      width: 100%;
-      }  
+
+  @media screen and (max-width: 1200px) {
+   width: 358px;
+    } 
+    @media screen and (max-width: 768px) {
+  width: 450px;
+  } 
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    }   
   }
 

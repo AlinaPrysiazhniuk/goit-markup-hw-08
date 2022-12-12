@@ -26,8 +26,13 @@
 }
 
 .clients-item {
-  width: calc((100% - 60px) / 2);
   height: 92px;
+  @media screen and (max-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (max-width: 480px) {
+    width: calc((100% - 60px) / 2);
+  }
 }
 
 .clients-link {
