@@ -89,6 +89,16 @@
   }
 }
 
+.contacts.navigation__contacts {
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 96px;
+  }
+}
+
+
 .menu-list .page__link--current {
   &:after {
     @media screen and (max-width: 480px) {
