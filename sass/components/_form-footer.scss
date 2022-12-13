@@ -44,7 +44,7 @@
     align-items: center;
     gap: 20px;
   } 
-  
+
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     flex-direction: column;
@@ -100,7 +100,7 @@
 }
 
 .form__email {
-  width: 450px;
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -115,6 +115,11 @@
   &:focus {
     border-color: var(--accent-color);
   }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+   }
+
  @media screen and (min-width: 768px) {
    width: 450px;
   }

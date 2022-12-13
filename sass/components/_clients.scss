@@ -25,7 +25,6 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    gap: 30px;
     flex-wrap: nowrap;
   }
   @media screen and (max-width: 768px) {
@@ -40,7 +39,7 @@
   //   width: calc((100% - 120px) / 6);
   // }
   @media screen and (min-width: 480px) {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 4 * 15px) / 2);
   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 90px) / 3);
