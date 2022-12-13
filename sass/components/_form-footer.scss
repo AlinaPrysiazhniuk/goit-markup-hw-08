@@ -1,10 +1,11 @@
 .send {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   } 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,16 +29,22 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color-text);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+  }  
+
 }
 
 
 .action__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  margin-top: 20px;
-
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  } 
+  
   @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     flex-direction: column;
@@ -46,9 +53,7 @@
   @media screen and (max-width: 480px) {
     flex-wrap: wrap;
     gap: 20px;
-  }  
-  
-
+  } 
   
 }
 
@@ -95,6 +100,7 @@
 }
 
 .form__email {
+  width: 450px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
@@ -109,15 +115,13 @@
   &:focus {
     border-color: var(--accent-color);
   }
+ @media screen and (min-width: 768px) {
+   width: 450px;
+  }
 
-  @media screen and (max-width: 1200px) {
-   width: 358px;
-    } 
-    @media screen and (max-width: 768px) {
-  width: 450px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
   } 
-  @media screen and (max-width: 480px) {
-    width: 450px;
-  }   
+   
   }
 

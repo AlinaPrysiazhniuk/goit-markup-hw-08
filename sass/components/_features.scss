@@ -17,17 +17,16 @@
 }
 
 .features__item {
-  @media screen and (max-width: 1200px) {
-    width: calc((100% - 120px) / 4);
-  }
-  @media screen and (max-width: 768px) {
-    width: calc((100% - 60px) / 2);
-  }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
   }
-  
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 120px) / 4);
+  }
+ 
 }
 
 
@@ -39,21 +38,18 @@
   background-color: var(--icon-features-background);
   border-radius: 4px;
 
-  @media screen and (max-width: 1200px) {
-    padding-right: 100px;
-    padding-left: 100px;
-  } 
-
-  @media screen and (max-width: 768px) {
-    padding-right: 142px;
-    padding-left: 142px;
-  } 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-right: 190px;
     padding-left: 190px;
   }
-  
-
+  @media screen and (min-width: 768px) {
+    padding-right: 142px;
+    padding-left: 142px;
+  } 
+  @media screen and (min-width: 1200px) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }  
 // padding-right: 100px;
 // padding-left: 100px;
 }
@@ -70,10 +66,10 @@
   color: var(--first-color);
   margin-bottom: 10px;
 
-  @media screen and (max-width: 1200px) {
-    text-align:left;
-  }
   @media screen and (max-width: 768px) {
+    text-align:center;
+  }
+  @media screen and (min-width: 769px) {
     text-align:left;
   }
 

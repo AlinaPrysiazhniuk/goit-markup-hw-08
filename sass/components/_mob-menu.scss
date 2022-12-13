@@ -50,7 +50,10 @@
       color: var(--accent-color);
     }
   }
+
+
   
+
   
   // .page__link {
   //   display: block;
@@ -78,8 +81,9 @@
     margin-bottom: 32px;
   }
   
-  .contacts--mob {
+  .contacts.contacts--mob {
     margin-bottom: 64px;
+    align-items: flex-start;
   }
   
   .contacts__link--mob {
@@ -94,25 +98,23 @@
     & .page__link--current {
       color: var(--accent-color);
       &:after {
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
           display: none;
         }
       }
     }
-  
-    @media screen and (max-width: 480px) {
-      margin-left: 0;
-      flex-direction: column;
-      gap: 0;
+    @media screen and (max-width: 767px) {
+      display: none;
     }
-    @media screen and (max-width: 768px) {
+    
+    @media screen and (min-width: 768px) {
       margin-left: 88px;
     }
   }
   
   .menu-list .page__link--current {
     &:after {
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
@@ -122,26 +124,26 @@
     margin-right: 0;
   }
   
-  .header__contacts {
+  .mob-menu .header__contacts {
     display: flex;
     margin-left: auto;
     height: 16px;
   
     .header__container & {
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
   }
   
   .header__contacts .contacts__item + .contacts__item {
-    margin-left: 30px;
-    @media screen and (max-width: 480px) {
-      margin-left: 0;
-    }
-    @media screen and (max-width: 768px) {
     margin-left: 0;
-  }
+  //   @media screen and (max-width: 480px) {
+  //     margin-left: 0;
+  //   }
+  //   @media screen and (max-width: 768px) {
+  //   margin-left: 0;
+  // }
   }
    
   
@@ -156,6 +158,12 @@
     }
   }
   
+  .contacts__icon--email,
+  .contacts__icon--tel {
+    @media screen and (max-width: 767px) {
+      display: none;
+    } 
+  }
 
   .header__container {
     display: flex;
@@ -164,7 +172,7 @@
   }
   
   .page--menu {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
   }
@@ -202,14 +210,14 @@
       height: 4px;
       background-color: var(--accent-color);
       border-radius: 2px;
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: 767px) {
         display: none;
       }
     }
   }
   
   .page__item--mob {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       margin-bottom: 32px;
     }
   }
@@ -235,14 +243,14 @@
   
   .mob {
     cursor: pointer;
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
   
   .mob--open,
   .mob--close {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
       position: absolute;
       top: 10px;
@@ -264,7 +272,7 @@
 
 
   .mob-menu {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       position: fixed;
       top: 0;
       left: 0;
@@ -276,17 +284,20 @@
       padding-right: 15px;
       padding-left: 40px;
     }
+    @media screen and (min-width: 768px) {
+   display:none;
+    }
   }
   
   .mob-menu-top {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       padding-top: 48px;
     }
   }
   
   .container--mob {
     display: none;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -296,14 +307,14 @@
   }
   
   .soc-mob {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       gap: 20px;
     }
   }
   
   .soc-mob-link {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       font-weight: 500;
       font-size: 18px;
       line-height: 1.22;
@@ -314,7 +325,7 @@
   }
   
   .soc-mob-item:not(:first-child) {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       position: relative;
       &::after {
         content: "";

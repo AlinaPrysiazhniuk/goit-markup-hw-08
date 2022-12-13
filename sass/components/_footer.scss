@@ -10,12 +10,16 @@
 }
 
 .footer__container {
-  @media screen and (max-width: 1200px) {
-    align-items: baseline;
+  
     display: flex;
-    gap: 93px;
-    }
-    @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  
+
+    @media screen and (min-width: 768px) {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
@@ -25,28 +29,24 @@
       gap: 60px;
       }
 
-  @media screen and (max-width: 480px) {
+    @media screen and (min-width: 1200px) {
+    align-items: baseline;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 60px;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 93px;
     }
 }
 
 .information {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   } 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   } 
- 
 }
 
 
@@ -59,16 +59,26 @@
 }
 
 .contacts {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 769px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
-  align-items: flex-start;
+    align-items: center;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  // @media screen and (max-width: 480px) {
+  //   display: flex;
+  //   flex-direction: column;
+  // align-items: flex-start;
+  // }
 }
 
 
@@ -110,13 +120,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
   } 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
   } 
+
 }
 
 .welcome__join {
