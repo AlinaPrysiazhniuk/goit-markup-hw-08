@@ -890,12 +890,12 @@ body {
 }
 @media screen and (min-width: 480px) {
   .clients-item {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .clients-item {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -984,7 +984,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 93px;
+    gap: 0px;
   }
 }
 
@@ -1014,6 +1014,18 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 70px;
   }
 }
 
@@ -1129,6 +1141,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .welcome {
+    margin-right: 93px;
   }
 }
 
@@ -1435,46 +1452,37 @@ body {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .features__item {
-    width: 100%;
-  }
+.features__item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
   .features__item {
-    width: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
-    width: calc((100% - 120px) / 4);
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
   }
 }
 
 .features__meta {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--icon-features-background);
   border-radius: 4px;
-}
-@media screen and (max-width: 767px) {
-  .features__meta {
-    padding-right: 190px;
-    padding-left: 190px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .features__meta {
-    padding-right: 142px;
-    padding-left: 142px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__meta {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .features__tittle {
