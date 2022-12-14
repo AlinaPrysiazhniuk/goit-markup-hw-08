@@ -2103,11 +2103,13 @@ body {
   }
 }
 
-.mob--close {
+.mob--close,
+.mob--open {
   -webkit-transition: fill var(--animation);
   transition: fill var(--animation);
 }
-.mob--close :hover {
+.mob--close :hover,
+.mob--open :hover {
   fill: var(--accent-color);
 }
 
@@ -2142,17 +2144,21 @@ body {
   position: relative;
   display: none;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow: auto;
+}
+@media screen and (max-width: 767px) {
+  .container--mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    overflow: auto;
+  }
 }
 
 @media screen and (max-width: 767px) {
