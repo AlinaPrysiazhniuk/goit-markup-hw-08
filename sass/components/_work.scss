@@ -4,17 +4,14 @@
 }
 
 .work {
-    @media screen and (max-width: 1200px) {
-    padding-top: 0;
-    }
-    
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-    @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 1199px) {
     display: none;
     }
+    @media screen and (min-width: 1200px) {
+    padding-top: 0;
     }
+}
 
 .work__list {
   display: flex;
