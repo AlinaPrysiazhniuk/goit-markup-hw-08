@@ -1,14 +1,3 @@
-// .header {
-//     border-bottom-color: var(--border-color-header);
-//     border-bottom-style: solid;
-//     border-bottom-width: 1px;
-//   }
-  
-//   .header--section {
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-  
 .page__link--mob,
 .contacts__link--mob {
     text-decoration: none;
@@ -51,32 +40,6 @@
     }
   }
 
-
-  
-
-  
-  // .page__link {
-  //   display: block;
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
-  //   color: var(--first-color);
-  //   &:hover,
-  //   &:focus {
-  //     color: var(--accent-color);
-  //   }
-  //   @media screen and (max-width: 480px) {
-  //     padding-top: 0;
-  //     padding-bottom: 0;
-  //   }
-  // }
-  
-  // .contacts__item:not(:last-child) {
-  //   margin-bottom: 0px;
-  //   @media screen and (max-width: 768px) {
-  //     margin-bottom: 32px;
-  //   }
-  // }
-  
  .contacts__item--mob:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -135,12 +98,6 @@
   
   .header__contacts .contacts__item + .contacts__item {
     margin-left: 0;
-  //   @media screen and (max-width: 480px) {
-  //     margin-left: 0;
-  //   }
-  //   @media screen and (max-width: 768px) {
-  //   margin-left: 0;
-  // }
   }
    
   
@@ -174,17 +131,6 @@
     }
   }
   
-// .page__header--mob {
-//   display: flex;
-//   gap: 50px;
-//   margin-left: 93px;
-//   & .page__link--current {
-//     color: var(--accent-color);
-//     &:after 
-//       
-//     }
-// }
-// }
 
 .page__header--mob {
   display: flex;
@@ -240,9 +186,11 @@
   
   .mob {
     cursor: pointer;
-    @media screen and (min-width: 768px) {
+
+    @include tablet {
       display: none;
     }
+  
   }
   
   .mob--open,
@@ -269,6 +217,11 @@
 
 
   .mob-menu {
+
+    @media screen and (min-width: 768px) {
+      display:none;
+    } 
+
     @media screen and (max-width: 767px) {
       position: fixed;
       top: 0;
@@ -283,13 +236,11 @@
       padding-right: 15px;
       padding-left: 40px;
     }
-    @media screen and (min-width: 768px) {
-   display:none;
-    }
   }
   
   .mob-menu-top {
     @media screen and (max-width: 767px) {
+      position: relative;
       padding-top: 48px;
     }
   }

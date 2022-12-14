@@ -18,7 +18,7 @@
   margin-bottom: 12px;
   color: var(--first-color);
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     line-height: 1.15;
     letter-spacing: 0.03em;
   }
@@ -71,10 +71,10 @@
     letter-spacing: 0.01em;
     color: var(--comment-color);
 
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
+      line-height: 1.67;
+      letter-spacing: 0.01em;
     }
   }
 
@@ -117,10 +117,10 @@
   color: var(--text-form-color);
   transition: color var(--animation);
 
-  @media screen and (min-width: 1200px) { 
-    font-size: 14px;
-    letter-spacing: 0.03em;
-  }
+@include desktop {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
 }
 
 .check-text span {
@@ -162,7 +162,8 @@
     height: 1px;
     background-color: var(--accent-color);
   }
-  @media screen and (min-width: 1200px) { 
+
+  @include desktop {
     font-size: 14px;
     letter-spacing: 0.03em;
   }

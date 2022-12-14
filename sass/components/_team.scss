@@ -1,14 +1,5 @@
-// .team {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
 .team {
   background-color: var(--team-background-color);
-
-  @media screen and (max-width: 768px) {
-    max-width: 768px;
-  }
 }
 
 .team__list {
@@ -17,47 +8,27 @@
   justify-content: center;
   gap: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     flex-wrap: nowrap;
   }
 }
 
-
-.team__item {
+.team__item {  
+  width: 100%;
   list-style-type: none;
   background-color: var(--accent-color-text);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-   
 
-    @media screen and (max-width: 767px) {
-      width: 100%;
-    }
-    // @media screen and (min-width: 769px) {
-    //   width: calc((100% - 4 * 15px) / 2);
-    // }
-    @media screen and (min-width: 1200px) {
-      width: calc((100% - 8 * 15px) / 4);
-    }
-  
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
-
-
-// .team__item:not(:last-child) {
-//   @media screen and (max-width: 1200px) {
-//     margin-right: 30px;
-//   }
-
-//   @media screen and (max-width: 768px) {
-//     margin-right: 0;
-//   }
-  
-//  @media screen and (min-width: 480x) {
-//   margin-right: 0;
-//   }
-// }
 
 .team__title {
   margin-bottom: 30px;
@@ -83,10 +54,10 @@
     
 .team__meta {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 
-  @media screen and (max-width: 480px) {
-    padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
   }
 }
 
@@ -137,15 +108,9 @@
   letter-spacing: 0.03em;
   color: var(--first-color);
 
-  // @media screen and (max-width: 1200px) {
-  //   font-size: 36px;
-  // line-height: 1.18;
-  // letter-spacing: 0.03em;
-  // }
-
-  // @media screen and (max-width: 768px) {
-  //   font-size: 28px;
-  //   line-height: 1.18;
-  //   letter-spacing: 0.03em;
-  // }
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+  }
 }

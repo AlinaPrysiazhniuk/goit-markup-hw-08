@@ -1,4 +1,5 @@
 .send {
+  
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
@@ -12,16 +13,6 @@
   }  
   }
 
-
-.form {
-  @media screen and (max-width: 768px) {
-  width: 100%;
-    } 
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    }  
-}
-
 .send__action {
   font-weight: 700;
   font-size: 14px;
@@ -30,12 +21,11 @@
   text-transform: uppercase;
   color: var(--accent-color-text);
 
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 20px;
-  }  
-
+  @include desktop {
+     margin-bottom: 20px;
+  }
+  
 }
-
 
 .action__wrapper {
   @media screen and (max-width: 1199px) {
@@ -116,18 +106,16 @@
     border-color: var(--accent-color);
   }
 
-  @media screen and (min-width: 480px) {
+  @include mobile {
     width: 450px;
-   }
-
- @media screen and (min-width: 768px) {
-   width: 450px;
+  }
+  @include tablet {
+    width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 358px;
     margin-right: 12px;
-  } 
-   
   }
+}
 

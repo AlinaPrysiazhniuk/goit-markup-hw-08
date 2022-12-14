@@ -1,7 +1,5 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: var(--hero-footer-background-color);
+ background-color: var(--hero-footer-background-color);
 }
 
 .contacts__map,
@@ -10,7 +8,6 @@
 }
 
 .footer__container {
-  
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -18,70 +15,44 @@
     margin-left: auto;
     margin-right: auto;
   
+@include tablet {
+  justify-content: space-around;
+  align-items: flex-start;
+}
 
-    @media screen and (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: flex-start;
-      margin-left: auto;
-      margin-right: auto;
-      gap: 60px;
-      }
+@include desktop {
+  align-items: baseline;
+  gap: 0px;
+}
 
-    @media screen and (min-width: 1200px) {
-    align-items: baseline;
-    display: flex;
-    gap: 0px;
-    }
 }
 
 .information {
-  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  } 
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-  } 
+  
+@include desktop {
+  margin-right: 70px;
+  align-items: flex-start;
+}
+
 }
 
 
 .address--footer {
   margin-top: 20px;
-
-  @media screen and (max-width: 480px) {
-    text-align: center;
-  }
 }
 
 .contacts {
-  @media screen and (max-width: 769px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+  @include desktop {
     align-items: flex-start;
   }
-
 }
-
 
 .contacts__item--footer {
   list-style-type: none;
@@ -117,20 +88,14 @@
 }
 
 .welcome {
-  @media screen and (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
-  @media screen and (max-width: 1199px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
-  @media screen and (min-width: 1200px) {
-    margin-right: 93px;
-  } 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @include desktop {
+    align-items: flex-start;
+     margin-right: 93px;
+  }
 }
 
 .welcome__join {
@@ -141,12 +106,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-color-text);
-  @media screen and (max-width: 480px) {
-    display: block;
-  } 
 }
-
-
 
 .soc__footer {
   display: flex;

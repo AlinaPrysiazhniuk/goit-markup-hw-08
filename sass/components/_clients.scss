@@ -1,9 +1,9 @@
 .clients {
   width: 100%;
 
-  @media screen and (max-width: 1200px) {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include desktop {  
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -22,29 +22,21 @@
   justify-content: center;
   gap: 30px;
 
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
+  @include desktop {
     flex-wrap: nowrap;
   }
-  @media screen and (max-width: 768px) {
-    flex-wrap: wrap;
-  }
-  
 }
 
 .clients-item {
   height: 92px;
-  // @media screen and (min-width: 1200px) {
-  //   width: calc((100% - 120px) / 6);
-  // }
-  @media screen and (min-width: 480px) {
-    width: calc((100% - 30px) / 2);
-  }
-  @media screen and (min-width: 768px) {
+ 
+@include mobile {
+   width: calc((100% - 30px) / 2);
+}
+
+ @include tablet {
     width: calc((100% - 60px) / 3);
-  }
-  
+ }
 }
 
 .clients-link {
@@ -61,10 +53,6 @@
     border-color: var(--icon-clients-color-hover);
   }
 
-  @media screen and (max-width: 1200px) {
-   padding-right: 32px;
-   padding-left: 32px;
-  }
 }
 
 .clients-icon {
