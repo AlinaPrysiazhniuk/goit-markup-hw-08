@@ -17,28 +17,20 @@
 .page__link,
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   transition: color var(--animation);
-}
-
-.contacts__link {
   @include tablet {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
-}
 
-.page__link {
-  @media screen and (max-width: 768px) {
-    font-weight: 500;
+  @include desktop {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
   }
 }
+
 
 .page__link {
   display: block;
@@ -48,14 +40,6 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
-  }
-}
-
-.contacts__link {
-  @media screen and (max-width: 768px) {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
   }
 }
 

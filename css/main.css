@@ -121,24 +121,20 @@ body {
 .page__link,
 .contacts__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
-
 @media screen and (min-width: 768px) {
-  .contacts__link {
+  .page__link,
+.contacts__link {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
   }
 }
-
-@media screen and (max-width: 768px) {
-  .page__link {
-    font-weight: 500;
+@media screen and (min-width: 1200px) {
+  .page__link,
+.contacts__link {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -153,14 +149,6 @@ body {
 }
 .page__link:hover, .page__link:focus {
   color: var(--accent-color);
-}
-
-@media screen and (max-width: 768px) {
-  .contacts__link {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-  }
 }
 
 .contacts__item:not(:last-child) {
@@ -507,8 +495,10 @@ body {
           box-shadow: var(--form-button-shadow);
   border: none;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero-button {
+    padding-left: 32px;
+    padding-right: 32px;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
@@ -919,6 +909,8 @@ body {
 
 .footer {
   background-color: var(--hero-footer-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .contacts__map,
@@ -1706,7 +1698,6 @@ body {
           justify-content: center;
   gap: 8px;
 }
-
 .portfolio-filters-button {
   cursor: pointer;
 }
