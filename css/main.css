@@ -1698,6 +1698,13 @@ body {
           justify-content: center;
   gap: 8px;
 }
+@media screen and (max-width: 767px) {
+  .portfolio-filters-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .portfolio-filters-button {
   cursor: pointer;
 }
