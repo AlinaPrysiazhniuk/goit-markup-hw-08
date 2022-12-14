@@ -1672,6 +1672,11 @@ body {
 .form__email:hover, .form__email:focus {
   border-color: var(--accent-color);
 }
+@media screen and (min-width: 388px) {
+  .form__email {
+    width: 358px;
+  }
+}
 @media screen and (min-width: 480px) {
   .form__email {
     width: 450px;
