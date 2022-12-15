@@ -106,11 +106,7 @@
   margin-bottom: 21px;
 }
 
-.check-text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
+.policy-agree {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -123,15 +119,12 @@
 }
 }
 
-.check-text span {
+.policy-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--first-color);
   border-radius: 2px;
   margin-right: 7px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   fill: transparent;
   .modal-check:checked + & {
     background-color: var(--accent-color);
@@ -155,7 +148,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 5px;
+    bottom: 1px;
 
     display: block;
     width: 100%;

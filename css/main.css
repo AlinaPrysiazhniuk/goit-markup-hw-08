@@ -1216,17 +1216,7 @@ body {
   margin-bottom: 21px;
 }
 
-.check-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+.policy-agree {
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1235,35 +1225,26 @@ body {
   transition: color var(--animation);
 }
 @media screen and (min-width: 1200px) {
-  .check-text {
+  .policy-agree {
     font-size: 14px;
     letter-spacing: 0.03em;
   }
 }
 
-.check-text span {
+.policy-check {
   width: 16px;
   height: 15px;
   border: 2px solid var(--first-color);
   border-radius: 2px;
   margin-right: 7px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   fill: transparent;
 }
-.modal-check:checked + .check-text span {
+.modal-check:checked + .policy-check {
   background-color: var(--accent-color);
   border: none;
   fill: #ffffff;
 }
-.modal-check:focus + .check-text span, .modal-check:hover + .check-text span {
+.modal-check:focus + .policy-check, .modal-check:hover + .policy-check {
   border-color: var(--accent-color);
 }
 
@@ -1279,7 +1260,7 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 5px;
+  bottom: 1px;
   display: block;
   width: 100%;
   height: 1px;
