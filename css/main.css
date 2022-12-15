@@ -384,19 +384,19 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tablet.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet.jpg);
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-tablet-2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tablet-2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .overlay {
     height: 600px;
     max-width: 1600px;
@@ -404,7 +404,7 @@ body {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop.jpg);
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-desktop-2x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-desktop-2x.jpg);
@@ -417,7 +417,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero-container {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -425,7 +425,7 @@ body {
     padding-right: 204px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -441,24 +441,12 @@ body {
   margin-left: auto;
   margin-bottom: 30px;
   font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (max-width: 767px) {
-  .hero-tittle {
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero-tittle {
-    font-size: 26px;
-    line-height: 1.62;
-    letter-spacing: 0.06em;
-    width: 360px;
-  }
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero-tittle {
     font-size: 44px;
     line-height: 1.36;
@@ -563,10 +551,10 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 50px;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   width: calc(100% - 30px);
   height: auto;
   background: #ffffff;
@@ -1662,6 +1650,12 @@ body {
 .form__email:hover, .form__email:focus {
   border-color: var(--accent-color);
 }
+@media screen and (max-width: 387px) {
+  .form__email {
+    -ms-flex-preferred-size: calc(100% - 30px);
+        flex-basis: calc(100% - 30px);
+  }
+}
 @media screen and (min-width: 388px) {
   .form__email {
     width: 358px;
@@ -1864,6 +1858,11 @@ body {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
+@media screen and (max-width: 268px) {
+  .page__link--mob {
+    font-size: 12vw;
+  }
+}
 
 .contacts__link--email {
   font-weight: 500;
@@ -1874,6 +1873,11 @@ body {
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
 }
+@media screen and (max-width: 386px) {
+  .contacts__link--email {
+    font-size: 8vw;
+  }
+}
 
 .contacts__link--tel {
   font-weight: 500;
@@ -1883,6 +1887,11 @@ body {
   color: var(--text-color);
   -webkit-transition: color var(--animation);
   transition: color var(--animation);
+}
+@media screen and (max-width: 280px) {
+  .contacts__link--tel {
+    font-size: 8vw;
+  }
 }
 
 .page__link--mob {
@@ -1897,6 +1906,11 @@ body {
 
 .contacts__item--mob:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 280px) {
+  .contacts__item--mob:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contacts.contacts--mob {
@@ -2036,6 +2050,11 @@ body {
     margin-bottom: 32px;
   }
 }
+@media screen and (max-width: 268px) {
+  .page__item--mob {
+    margin-bottom: 15px;
+  }
+}
 
 .page__item--mob,
 .contacts__item--mob {
@@ -2083,8 +2102,8 @@ body {
   .mob--close {
     width: 100%;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 15px;
     width: 40px;
     height: 40px;
     padding: 0;
@@ -2117,21 +2136,14 @@ body {
     width: 100vw;
     height: 100dvh;
     background-color: var(--main-background-color);
-    padding-top: 10px;
+    padding-top: 40px;
     padding-bottom: 48px;
     padding-right: 15px;
     padding-left: 40px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .mob-menu-top {
-    padding-top: 48px;
-  }
-}
-
 .container--mob {
-  position: relative;
   display: none;
   height: 100%;
 }
@@ -2159,6 +2171,12 @@ body {
     display: -ms-flexbox;
     display: flex;
     gap: 20px;
+  }
+}
+@media screen and (max-width: 418px) {
+  .soc-mob {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 

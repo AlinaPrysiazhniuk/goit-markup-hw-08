@@ -106,7 +106,9 @@
     border-color: var(--accent-color);
   }
 
-
+  @media screen and (max-width: 387px) {
+   flex-basis: calc(100% - 30px);
+  }
   @media screen and (min-width: 388px) {
     width: 358px;
   }
