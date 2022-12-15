@@ -1212,6 +1212,12 @@ body {
   fill: var(--accent-color);
 }
 
+.check-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .check-field {
   margin-bottom: 21px;
 }
