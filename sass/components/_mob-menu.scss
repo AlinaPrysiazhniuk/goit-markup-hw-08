@@ -269,12 +269,12 @@
     } 
   }
   
-  // .soc-mob {
-  //   @media screen and (max-width: 767px) {
-  //     display: flex;
-  //     gap: 20px;
-  //   }
-  // }
+  .soc-mob {
+    @media screen and (max-width: 767px) {
+      display: flex;
+      gap: 20px;
+    }
+  }
   
   .soc-mob-link {
     @media screen and (max-width: 767px) {
@@ -289,7 +289,6 @@
   
   .soc-mob-item:not(:first-child) {
     @media screen and (max-width: 767px) {
-      margin-right: 20px;
       position: relative;
       &::after {
         content: "";

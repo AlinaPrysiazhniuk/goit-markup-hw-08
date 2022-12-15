@@ -2165,6 +2165,15 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+  .soc-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .soc-mob-link {
     font-weight: 500;
     font-size: 18px;
@@ -2177,7 +2186,6 @@ body {
 
 @media screen and (max-width: 767px) {
   .soc-mob-item:not(:first-child) {
-    margin-right: 20px;
     position: relative;
   }
   .soc-mob-item:not(:first-child)::after {
