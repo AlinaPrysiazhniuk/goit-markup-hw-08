@@ -483,7 +483,7 @@ body {
           box-shadow: var(--form-button-shadow);
   border: none;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .hero-button {
     padding-left: 32px;
     padding-right: 32px;
@@ -1652,8 +1652,7 @@ body {
 }
 @media screen and (max-width: 387px) {
   .form__email {
-    -ms-flex-preferred-size: calc(100% - 30px);
-        flex-basis: calc(100% - 30px);
+    padding-right: 150px;
   }
 }
 @media screen and (min-width: 388px) {

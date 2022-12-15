@@ -135,7 +135,7 @@
   box-shadow: var(--form-button-shadow);
   border: none;
 
-  @include desktop {
+  @include tablet {
     padding-left: 32px;
     padding-right: 32px;
     font-size: 16px;
