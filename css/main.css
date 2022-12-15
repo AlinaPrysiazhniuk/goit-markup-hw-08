@@ -867,14 +867,16 @@ body {
 .clients-item {
   height: 92px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .clients-item {
-    width: calc((100% - 30px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .clients-item {
-    width: calc((100% - 60px) / 3);
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
   }
 }
 
