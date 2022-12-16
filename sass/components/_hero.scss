@@ -76,13 +76,13 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     padding-top: 118px;
     padding-bottom: 118px;
     padding-left: 204px;
     padding-right: 204px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
     padding-left: 204px;
@@ -101,7 +101,10 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
+    width: 360px;
+  } 
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
     width: 696px;

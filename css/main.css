@@ -417,7 +417,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 768px) {
   .hero-container {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -425,7 +425,7 @@ body {
     padding-right: 204px;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .hero-container {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -446,7 +446,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
+  .hero-tittle {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .hero-tittle {
     font-size: 44px;
     line-height: 1.36;
